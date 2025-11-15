@@ -1,9 +1,9 @@
-//
-//  CIS_137_Homework_13App.swift
-//  CIS-137-Homework-13
-//
-//  Created by Tyler Hager on 11/15/25.
-//
+/*
+ *  CIS-137
+ *  Homework 13
+ *  Tyler Hager
+ *  November 15, 2025
+ */
 
 import SwiftUI
 

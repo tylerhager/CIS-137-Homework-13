@@ -1,9 +1,8 @@
 /*
- *  Lab 3
- *  Group 9
- *  Noa Tomas Mandorf
+ *  CIS-137
+ *  Homework 13
  *  Tyler Hager
- *  November 10, 2025
+ *  November 15, 2025
  */
 
 import Foundation
@@ -11,6 +10,7 @@ import Foundation
 struct MemoryGameModel {
     private(set) var cards: Array<Card>
     private(set) var numberOfPairs: Int
+    private(set) var pairsFound: Int = 0
     private var indexOfTheOneAndOnlyFaceUpCard: Int?
     
     struct Card: Identifiable {
@@ -30,6 +30,7 @@ struct MemoryGameModel {
                 if cards[potentialMatchIndex].imageFile == cards[chosenIndex].imageFile {
                     cards[potentialMatchIndex].isMatched = true
                     cards[chosenIndex].isMatched = true
+                    pairsFound += 1
                 }
 
                 cards[chosenIndex].isFaceUp = true

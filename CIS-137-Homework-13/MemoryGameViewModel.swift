@@ -1,9 +1,8 @@
 /*
- *  Lab 3
- *  Group 9
- *  Noa Tomas Mandorf
+ *  CIS-137
+ *  Homework 13
  *  Tyler Hager
- *  November 10, 2025
+ *  November 15, 2025
  */
 
 import SwiftUI
@@ -31,5 +30,9 @@ class MemoryGameViewModel: ObservableObject {
     
     func choose(card: MemoryGameModel.Card) {
         model.chooseCard(card: card)
+    }
+    
+    var pairsFound: Int {
+        model.pairsFound
     }
 }
